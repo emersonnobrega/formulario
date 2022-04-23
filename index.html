@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/javascript/main.js"></script>
+    <title>Banco de Talentos</title>
+</head>
+
+<body>    
+    <form>
+        <div>
+            <h1>Banco de Talentos</h1>
+            <h2>Informe seus Dados</h2>
+            <br>
+        </div>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label for="tipodevaga"><strong>Tipo de Vaga</strong></label>
+                <select id="tipodevaga">
+                    <option selected disabled value="">Tipo de Vaga</option>
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>FullStack</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label>Informe o nível da vaga</label>
+                <label>
+                    <input type="radio" name="nivelvaga" value="estagiario">Estágiario</label>
+                </label>
+                <label>
+                    <input type="radio" name="nivelvaga" value="junior">Júnior</label>
+                </label>
+                <label>
+                    <input type="radio" name="nivelvaga" value="pleno">Pleno</label>
+                </label>
+                <label>
+                    <input type="radio" name="nivelvaga" value="senior">Senior</label>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2"> CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3"> JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4"> PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5"> C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6"> Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7"> Java</label>
+                <input type="checkbox" id="tecnologia8" name="tecnologia8" value="Git">
+                <label for="tecnologia8"> Git</label>
+                <input type="checkbox" id="tecnologia9" name="tecnologia9" value="React">
+                <label for="tecnologia9"> React</label>
+                <input type="checkbox" id="tecnologia10" name="tecnologia10" value="Vuejs">
+                <label for="tecnologia10"> Vuejs</label>
+                <input type="checkbox" id="tecnologia11" name="tecnologia11" value="Angular">
+                <label for="tecnologia11"> Angular</label>
+                <input type="checkbox" id="tecnologia12" name="tecnologia12" value="Node">
+                <label for="tecnologia12"> Node</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <br>
+                <label for="experiencia"><strong>Fale um pouco sobre você: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <h3>Anexar o currículo</h3>
+                <label for="meuarquivo">Selecionte um arquivo: </label>
+                <input type="file" id="meuarquivo" name="meuarquivo"><br><br>
+            </div>
+        </fieldset>
+        <fieldset class="botoes">
+            <input type="submit" onclick="Enviar();" value="Enviar"></input><br>
+            <input type="reset" value="Resetar"></input>
+        </fieldset>
+    </form>
+</body>
+
+</html>
